@@ -4,6 +4,11 @@
             "id": "react-corebase",
             "name": "React + Corebase",
             "framework": "react"
+        },
+        {
+            "id": "nextjs-corebase",
+            "name": "Next.js + Corebase",
+            "framework": "nextjs"
         }
     ]
 }
