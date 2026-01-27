@@ -1,0 +1,9 @@
+{
+    "templates": [
+        {
+            "id": "react-corebase",
+            "name": "React + Corebase",
+            "framework": "react"
+        }
+    ]
+}

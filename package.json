@@ -1,0 +1,33 @@
+{
+  "name": "corebase-create-app",
+  "version": "0.1.0",
+  "description": "A cli tool for creating corebase project with the predefined templates.",
+  "keywords": [
+    "baas",
+    "corebase"
+  ],
+  "homepage": "https://github.com/avijit969/create-corebase-app#readme",
+  "bugs": {
+    "url": "https://github.com/avijit969/create-corebase-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avijit969/create-corebase-app.git"
+  },
+  "license": "ISC",
+  "author": "Abhijit Pradhan",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "create-corebase-app": "./cli/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "fs-extra": "^11.3.3",
+    "inquirer": "^9.2.12"
+  }
+}
