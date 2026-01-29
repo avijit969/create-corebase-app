@@ -1,10 +1,13 @@
 {
   "name": "corebase-create-app",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "A cli tool for creating corebase project with the predefined templates.",
   "keywords": [
     "baas",
-    "corebase"
+    "corebase",
+    "create-corebase-app",
+    "nextjs-corebase",
+    "react-corebase"
   ],
   "homepage": "https://github.com/avijit969/create-corebase-app#readme",
   "bugs": {

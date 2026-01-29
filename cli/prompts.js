@@ -4,7 +4,6 @@ const require = createRequire(import.meta.url);
 const registry = require("../registry.json");
 
 export async function askQuestions() {
-    console.log("Loaded templates:", JSON.stringify(registry.templates, null, 2));
     if (!registry.templates || registry.templates.length === 0) {
         console.error("No templates found in registry!");
         process.exit(1);
