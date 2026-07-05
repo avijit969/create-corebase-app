@@ -7,20 +7,20 @@ A CLI tool for creating Corebase projects with predefined templates.
 You can create a new project using `npx`:
 
 ```bash
-npx corebase-create-app <project-name>
+npx create-corebase-app <project-name>
 ```
 
 Or install it globally:
 
 ```bash
-npm install -g corebase-create-app
+npm install -g create-corebase-app
 create-corebase-app <project-name>
 ```
 
 ## Features
 
 - 🚀 Interactive project setup
-- 📂 Pre-configured templates (React + Corebase)
+- 📂 Pre-configured templates (React + Corebase, Next.js + Corebase)
 - 🔐 Automatic environment variable injection
 - 📦 Auto-installs dependencies
 

@@ -1,6 +1,6 @@
 {
-  "name": "corebase-create-app",
-  "version": "0.2.1",
+  "name": "create-corebase-app",
+  "version": "0.3.0",
   "description": "A cli tool for creating corebase project with the predefined templates.",
   "keywords": [
     "baas",
@@ -28,6 +28,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@clack/prompts": "^1.0.1",
     "chalk": "^5.6.2",
     "commander": "^14.0.2",
     "fs-extra": "^11.3.3",

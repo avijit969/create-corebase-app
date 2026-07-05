@@ -5,7 +5,8 @@ import { useNavigate } from "react-router"
 import { ModeToggle } from "@/components/mode-toggle"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { User, Mail, Shield } from "lucide-react"
-
+import { useQuery } from "corebase-js/react"
+import { corebase } from "../corebase/client"
 function App() {
   const { user, signOut } = useAuthStore()
   const navigate = useNavigate()
@@ -14,7 +15,11 @@ function App() {
     navigate("/login")
     await signOut()
   }
-
+  const query = {
+    from: 'posts',
+    select: ["id"]
+  };
+  const { data, error, loading } = useQuery(corebase, query)
   return (
     <div className="min-h-screen w-full bg-muted/40 dark:bg-zinc-950">
       {/* Navbar */}
@@ -78,6 +83,21 @@ function App() {
             </p>
           </CardFooter>
         </Card>
+
+        {/* test realtime useQuery hook */}
+        <div>
+          {loading ? (
+            <p>Loading...</p>
+          ) : error ? (
+            <p>Error: {error.message}</p>
+          ) : (
+            <div>
+              {data?.map((post: any) => (
+                <div key={post.id}>{post.title}</div>
+              ))}
+            </div>
+          )}
+        </div>
       </main>
     </div>
   )
